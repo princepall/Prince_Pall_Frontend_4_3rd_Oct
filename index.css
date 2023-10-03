@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  background: black;
+}
+
+.sidebar {
+  max-width: 375px;
+  background: #262626;
+  height: 1075px;
+  text-align: center;
+  margin: 20px;
+  padding: 40px;
+
+  box-sizing: border-box;
+  border-radius: 50px;
+}
+
+.action-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+button {
+  cursor: pointer;
+  background: #111111;
+  width: 298px;
+  height: 61px;
+  border-radius: 30px;
+  border: none;
+  color: rgba(255, 255, 255, 0.484);
+  font-size: 18px;
+}
+
+body div {
+  flex: 1;
+}
+
+h1 {
+  color: white;
+}
+p {
+  color: rgba(255, 255, 255, 0.484);
+}
+
+section {
+  background: #262626;
+  border-radius: 50px;
+  margin: 20px;
+  margin-left: 0;
+  padding: 40px;
+}
+
+section div {
+  display: flex;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 400;
+}
+
+table {
+  width: 100%;
+  color: rgba(255, 255, 255, 0.484);
+  border: 2px solid;
+  border-radius: 30px;
+}
+th,
+td {
+  text-align: left;
+  padding: 10px 30px;
+}
+th {
+  border-bottom: 1px solid;
+}
+td {
+  border-bottom: none;
+  border-top: none;
+}
+
+td:not(:last-child),
+th:not(:last-child) {
+  border-right: 1px solid;
+}
+
+@media screen and (max-width: 1700px) {
+  section div {
+    flex-direction: column-reverse;
+  }
+}
+
+@media screen and (max-width: 1235px) {
+   .sidebar{
+    min-width: 100%;
+   }
+   .action-buttons{
+    align-items: center;
+   }
+  }
+  
